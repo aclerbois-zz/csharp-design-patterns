@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ColorConsoleWriter.cs" />
     <Compile Include="ConsoleWriter.cs" />
+    <Compile Include="AsciiFrameConsoleWriter.cs" />
     <Compile Include="IConsoleWriter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

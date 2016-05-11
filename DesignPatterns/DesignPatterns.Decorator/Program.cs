@@ -10,9 +10,11 @@ namespace DesignPatterns.Decorator
 
             IConsoleWriter normalWriter = new ConsoleWriter();
             IConsoleWriter redOnWhiteWriter = new ColorConsoleWriter(normalWriter, ConsoleColor.White, ConsoleColor.Red);
+            IConsoleWriter frameWriter = new AsciiFrameConsoleWriter(redOnWhiteWriter);
 
             normalWriter.WriteLine(valueToDisplay);
             redOnWhiteWriter.WriteLine(valueToDisplay);
+            frameWriter.WriteLine(valueToDisplay);
 
             Console.WriteLine();
             Console.WriteLine("Press any key...");
